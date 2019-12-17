@@ -29,6 +29,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "OAuthSwift", dependencies: [], path: "Sources"),
-        .testTarget(name: "OAuthSwiftTests", dependencies: ["OAuthSwift"], path: "OAuthSwiftTests"),
+//        .testTarget(name: "OAuthSwiftTests", dependencies: ["OAuthSwift"], path: "OAuthSwiftTests"),
     ]
 )
