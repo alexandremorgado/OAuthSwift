@@ -140,9 +140,6 @@ open class OAuth2Swift: OAuthSwift {
                     if #available(iOS 13.0, tvOS 13.0, macCatalyst 13.0, *),
                         ASWebAuthenticationURLHandler.isCancelledError(domain: domain, code: code) {
                         completion(.failure(.cancelled))
-                    } else if #available(iOS 11, *),
-                        SFAuthenticationURLHandler.isCancelledError(domain: domain, code: code) {
-                        completion(.failure(.cancelled))
                     } else {
                         otherErrorBlock()
                     }
